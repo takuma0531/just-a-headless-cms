@@ -1,0 +1,23 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "A headless CMS server",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon dist/index.js",
+    "watch": "tsc --watch",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "lint": "eslint --fix \"src/**/*.{js,tsx,ts,json}\""
+  },
+  "author": "Takuma Masaki",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "18.15.3",
+    "@typescript-eslint/eslint-plugin": "5.55.0",
+    "@typescript-eslint/parser": "5.55.0",
+    "eslint": "8.36.0",
+    "nodemon": "2.0.21",
+    "typescript": "4.9.5"
+  }
+}

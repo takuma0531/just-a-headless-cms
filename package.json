@@ -1,0 +1,19 @@
+{
+  "name": "headless-cms-for-learning",
+  "version": "1.0.0",
+  "description": "A headless CMS",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm run build:back && npm run build:front",
+    "build:back": "npm run build -w backend",
+    "dev:back": "npm run dev -w backend",
+    "dev:watch:back": "npm run watch -w backend",
+    "build:front": "npm run build -w frontend",
+    "dev:front": "npm run dev -w frontend"
+  },
+  "author": "Takuma Masaki",
+  "license": "ISC",
+  "workspaces": [
+    "packages/*"
+  ]
+}
